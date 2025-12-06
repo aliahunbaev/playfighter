@@ -62,33 +62,43 @@ export default function Grid({ postsByDay, currentDay, totalDays }: GridProps) {
             const day = i + 1
             const post = postsByDay.get(day)
             const hasPost = !!post
+            const isPast = currentDay ? day <= currentDay : false
 
-            const commonClasses = `w-[10px] h-[10px] transition-colors duration-300 relative flex-shrink-0 ${
-              hasPost
-                ? 'bg-black dark:bg-[#e5e5e5] hover:opacity-80 cursor-pointer'
-                : 'bg-black/5 dark:bg-white/10'
-            }`
-
-            if (hasPost) {
+            // Past days are filled, future days are empty
+            // Only days with posts are clickable and hoverable
+            if (isPast) {
+              if (hasPost) {
+                // Past day with entry - clickable and hoverable
+                return (
+                  <Link
+                    key={day}
+                    href={`/day/${day}`}
+                    className="w-[10px] h-[10px] bg-black dark:bg-[#e5e5e5] hover:opacity-80 cursor-pointer transition-colors duration-300 relative flex-shrink-0"
+                    onMouseMove={(e) => handleMouseMove(e, day)}
+                    onMouseLeave={handleMouseLeave}
+                    title={`Day ${day}: ${post.title || 'Entry ' + day}`}
+                  />
+                )
+              } else {
+                // Past day without entry - filled but not clickable
+                return (
+                  <div
+                    key={day}
+                    className="w-[10px] h-[10px] bg-black dark:bg-[#e5e5e5] transition-colors duration-300 relative flex-shrink-0"
+                    title={`Day ${day}`}
+                  />
+                )
+              }
+            } else {
+              // Future day - empty
               return (
-                <Link
+                <div
                   key={day}
-                  href={`/day/${day}`}
-                  className={commonClasses}
-                  onMouseMove={(e) => handleMouseMove(e, day)}
-                  onMouseLeave={handleMouseLeave}
-                  title={`Day ${day}: ${post.title || 'Entry ' + day}`}
+                  className="w-[10px] h-[10px] bg-black/5 dark:bg-white/10 transition-colors duration-300 relative flex-shrink-0"
+                  title={`Day ${day}`}
                 />
               )
             }
-
-            return (
-              <div
-                key={day}
-                className={commonClasses}
-                title={`Day ${day}`}
-              />
-            )
           })}
         </div>
       </div>

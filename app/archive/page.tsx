@@ -1,9 +1,10 @@
-import { getAllPosts, TOTAL_DAYS } from '@/lib/posts'
+import { getAllPosts, TOTAL_DAYS, getCurrentDay } from '@/lib/posts'
 import Link from 'next/link'
 import Grid from '../components/Grid'
 
 export default function ArchivePage() {
   const posts = getAllPosts()
+  const currentDay = getCurrentDay()
   // Only show entry from December 5th (day 1)
   const filteredPosts = posts.filter(post => post.day === 1)
   const postsByDay = new Map(filteredPosts.map(post => [post.day, post]))
@@ -22,7 +23,7 @@ export default function ArchivePage() {
         <>
           {/* Grid - Full Width */}
           <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] px-6 mb-12">
-            <Grid postsByDay={postsByDay} totalDays={TOTAL_DAYS} />
+            <Grid postsByDay={postsByDay} currentDay={currentDay} totalDays={TOTAL_DAYS} />
           </div>
           
           <div className="max-w-4xl mx-auto">

@@ -4,7 +4,6 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 import Menu from './components/Menu'
 import DarkModeToggle from './components/DarkModeToggle'
-import Wordmark from './components/Wordmark'
 import ThemeScript from './components/ThemeScript'
 
 const inter = Inter({
@@ -33,8 +32,8 @@ export default function RootLayout({
           <header className="mb-20 relative z-50">
             <nav className="relative flex justify-center items-center">
               <Menu />
-              <a href="/" className="relative z-50">
-                <Wordmark />
+              <a href="/" className="font-sans text-2xl md:text-3xl font-bold relative z-50" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+                PLAYFIGHTER
               </a>
               <div className="absolute right-0 z-50">
                 <DarkModeToggle />
