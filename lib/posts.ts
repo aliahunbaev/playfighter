@@ -14,9 +14,10 @@ export interface Post {
   rawContent: string
 }
 
-// Project start date: December 5, 2025
+// Project start date: December 6, 2025 (today)
 // We'll use EST/EDT timezone (America/New_York) for date calculations
-export const START_DATE_STRING = '2025-12-05' // YYYY-MM-DD format
+// Day counter starts today and increments at midnight EST
+export const START_DATE_STRING = '2025-12-06' // YYYY-MM-DD format
 export const TOTAL_DAYS = 1000
 
 export function calculateDayNumber(date: Date): number {

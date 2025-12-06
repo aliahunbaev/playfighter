@@ -1,5 +1,5 @@
 ---
-date: "December 5, 2025"
+date: "December 6, 2025"
 title: "one day or day one"
 ---
 
