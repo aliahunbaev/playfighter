@@ -6,18 +6,9 @@ export default function DarkModeToggle() {
   const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
-    // Check initial theme from localStorage or system preference
-    const stored = localStorage.getItem('theme')
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const shouldBeDark = stored === 'dark' || (!stored && prefersDark)
-    
-    if (shouldBeDark) {
-      document.documentElement.classList.add('dark')
-      setIsDark(true)
-    } else {
-      document.documentElement.classList.remove('dark')
-      setIsDark(false)
-    }
+    // Sync state with the theme class that was set by the blocking script
+    const isDark = document.documentElement.classList.contains('dark')
+    setIsDark(isDark)
   }, [])
 
   const toggle = () => {

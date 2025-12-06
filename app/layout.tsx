@@ -4,6 +4,8 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 import Menu from './components/Menu'
 import DarkModeToggle from './components/DarkModeToggle'
+import Wordmark from './components/Wordmark'
+import ThemeScript from './components/ThemeScript'
 
 const inter = Inter({
   weight: ['300', '400', '500', '700'],
@@ -24,14 +26,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${GeistMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${GeistMono.variable}`} suppressHydrationWarning>
       <body className="min-h-screen">
+        <ThemeScript />
         <div className="max-w-reading mx-auto px-6 py-12 md:py-20">
           <header className="mb-20 relative z-50">
             <nav className="relative flex justify-center items-center">
               <Menu />
-              <a href="/" className="font-sans text-2xl md:text-3xl font-bold relative z-50" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
-                PLAYFIGHTER®
+              <a href="/" className="relative z-50">
+                <Wordmark />
               </a>
               <div className="absolute right-0 z-50">
                 <DarkModeToggle />
