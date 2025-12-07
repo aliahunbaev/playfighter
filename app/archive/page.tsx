@@ -5,9 +5,7 @@ import Grid from '../components/Grid'
 export default function ArchivePage() {
   const posts = getAllPosts()
   const currentDay = getCurrentDay()
-  // Only show entry from December 5th (day 1)
-  const filteredPosts = posts.filter(post => post.day === 1)
-  const postsByDay = new Map(filteredPosts.map(post => [post.day, post]))
+  const postsByDay = new Map(posts.map(post => [post.day, post]))
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
@@ -19,7 +17,7 @@ export default function ArchivePage() {
 
   return (
     <div>
-      {filteredPosts.length > 0 ? (
+      {posts.length > 0 ? (
         <>
           {/* Grid - Full Width */}
           <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] px-6 mb-12">
@@ -30,7 +28,7 @@ export default function ArchivePage() {
             {/* Entry List */}
           <div className="pt-12">
             <div className="space-y-2">
-              {filteredPosts.map((post) => (
+              {posts.map((post) => (
                 <Link
                   key={post.day}
                   href={`/day/${post.day}`}

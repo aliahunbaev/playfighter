@@ -6,9 +6,7 @@ export default async function HomePage() {
   const latestPost = await getLatestPostWithContent()
   const currentDay = getCurrentDay()
   const allPosts = getAllPosts()
-  // Only show entry from December 5th (day 1)
-  const filteredPosts = allPosts.filter(post => post.day === 1)
-  const postsByDay = new Map(filteredPosts.map(post => [post.day, post]))
+  const postsByDay = new Map(allPosts.map(post => [post.day, post]))
 
   return (
     <div>
