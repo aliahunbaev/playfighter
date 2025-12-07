@@ -29,11 +29,11 @@ but if you’ve tasted how good it feels to have your shit together, then you do
 
 knowlege.
 
-you won’t feel like doing the right things. but you’ve already been through this cycle before, so you KNOW that just DOING those things will GENERATE the positive FEELINGS again eventually, after which you can just follow your instinct everyday and just be a fucking beat automatically.
+you won’t feel like doing the right things. but you’ve already been through this cycle before, so you KNOW that just DOING those things will GENERATE the positive FEELINGS again eventually, after which you can just follow your instinct everyday and just be a fucking beast automatically.
 
 so on day 2 of this 1,000 day project, you find me trying to get back in THAT MODE.
 
-i started this 1,000 day project for playfighter as a constant reminder to myself that time is passing. 1,000 days looks so small when you put it into a grid of boxes. but that’s what we have. it’s a concrete number of hours before i turn 22. and i don’t want to waste them. i don’t want to get bogged down by negative emotions and then stay in that swamp for 10 years and then suddenly wake up at 30 and get my life together.
+i started this 1,000 day project for playfighter as a constant reminder to myself that time is passing. 1,000 days looks so small when you put it into a grid of boxes. but that’s what we have. i set my sights on a beautiful life for when i'm 22. it’s a concrete number of hours before i turn 22. and i don’t want to waste them. i don’t want to get bogged down by negative emotions and then stay in that swamp for 10 years and then suddenly wake up at 30 and get my life together.
 
 i’m doing it now.
 
@@ -45,7 +45,7 @@ with the utmost importance.
 
 the man who wastes a single hour has not yet discovered the value of life.
 
-at the age of 18, i can tell you a few acitons that, when included in my day, creates a great day, which then compounds into a great life
+at the age of 18, i can tell you a few actions that, when included in my day, creates a great day, which then compounds into a great life
 
 - writing
 - training
