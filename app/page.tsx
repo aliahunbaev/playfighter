@@ -2,6 +2,9 @@ import { getLatestPostWithContent, getCurrentDay, getAllPosts, TOTAL_DAYS } from
 import LiveDateTime from './components/LiveDateTime'
 import Grid from './components/Grid'
 
+// Force dynamic rendering so the day counter updates without rebuilding
+export const dynamic = 'force-dynamic'
+
 export default async function HomePage() {
   const latestPost = await getLatestPostWithContent()
   const currentDay = getCurrentDay()
