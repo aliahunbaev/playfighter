@@ -82,9 +82,9 @@ combat is the distillation - the aesthetic universe someone enters without knowi
 
 ## the instagram situation
 
-combat's instagram has 2,100 followers and 38 posts. not starting from zero. steve jobs, caesar bust, maintain the vision, baldwin quotes, neighborhood shots. the philosophy's already there.
+combat's instagram has 2,100 followers and 38 posts. not starting from zero. quotes, moodboards, the point of view exists.
 
-about 1,000 people unfollowed since abdul left and we started posting again. about 200-300 new people followed since then. losing followers made me feel bad but that's the wrong thing to watch. the 200-300 who followed are my people. they found combat and stayed because they got it. that's the signal.
+about 1,000 people unfollowed since abdul left and we started posting again. about 200-300 new people followed since then. losing followers made me feel bad but that's the wrong thing to watch. the 200-300 who followed are my people. they found combat and stayed because they got it.
 
 combat is about the philosophy. the philosophy is the brand. products are one expression of it. if i strip away the curation to become a clean brand page with clothes, i kill what makes it interesting.
 
@@ -104,8 +104,6 @@ the media is a hybrid zine/lookbook. physical and digital.
 
 8-12 pages with a cover that's clean and bold, an opening statement of one page saying what combat créatif is and what it means to be a creative soldier, the manifesto. then 4-6 pages of friends wearing the sweats in real life - working, walking, creating. documentary, not fashion. then 1-2 pages of philosophy, design breakdown, baldwin and pressfield quotes, my writing about creative practice. and a product page with a simple shot, details, how to buy.
 
-minimal. high contrast. white space. let the images and type do the work.
-
 pdf on combatcreatif.com free to download. print 25-50 copies for first orders or to give friends. post spreads on combat's ig before launch.
 
 and a 5-8 min playfighter video showing the process - designing, shooting the lookbook, what combat means. lives on my channel, drives people to combat.
@@ -124,3 +122,5 @@ launch end of january or early february. product live, zine drops, youtube video
 
 not pretending i have a studio or budget. making beautiful shit with my friends in nyc, documenting honestly on playfighter, packaging it clean through combat.
 
+
+note: these are my thoughts / takeaways from brainstorming this morning, talking to claude. just for a glimpse of where my heads at, these ideas will likely be explored deeper and refined.
