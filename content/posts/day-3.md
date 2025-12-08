@@ -120,9 +120,9 @@ next 8 days are finals. no moves on combat.
 
 winter break is the real window. finalize sweats design. find manufacturers. get samples or first run. shoot lookbook with friends. write the copy. design the zine. document everything for playfighter youtube.
 
-launch end of january or early february. product live, zine drops, youtube video. selling real things by spring semester.
+launch sometime in spring. i think 2-3 drops spring semester would be dope, or one in the summer too when i'm here. product live, zine drops, youtube video.
 
-making beautiful shit with my friends in nyc, documenting honestly on playfighter, packaging it clean through combat.
+making beautiful shit with my friends in nyc, documenting my truth on playfighter, packaging it clean through combat.
 
 
 note: these are my thoughts / takeaways from brainstorming this morning, talking to claude. just for a glimpse of where my heads at, these ideas will likely be explored deeper and refined.
