@@ -21,10 +21,11 @@ export default function PostNavigation({ prev, next, children }: PostNavigationP
     const handleKeyDown = (e: KeyboardEvent) => {
       // Don't navigate if user is typing in an input, textarea, or has text selected
       const target = e.target as HTMLElement
+      const selection = window.getSelection()?.toString()
       if (
         target.tagName === 'INPUT' ||
         target.tagName === 'TEXTAREA' ||
-        window.getSelection()?.toString().length > 0
+        (selection && selection.length > 0)
       ) {
         return
       }
