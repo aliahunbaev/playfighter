@@ -120,7 +120,7 @@ winter break is the real window. finalize sweats design. find manufacturers. get
 
 launch end of january or early february. product live, zine drops, youtube video. selling real things by spring semester.
 
-not pretending i have a studio or budget. making beautiful shit with my friends in nyc, documenting honestly on playfighter, packaging it clean through combat.
+making beautiful shit with my friends in nyc, documenting honestly on playfighter, packaging it clean through combat.
 
 
 note: these are my thoughts / takeaways from brainstorming this morning, talking to claude. just for a glimpse of where my heads at, these ideas will likely be explored deeper and refined.
