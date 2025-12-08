@@ -72,7 +72,7 @@ but products i can do. products get me into someone's closet in the next 90 days
 
 ## playfighter vs combat
 
-playfighter is my thoughts, emotions. i feel and see and think about so much, i need somewhere to put it. to make videos about my life and what i see. the real fans can look through my instagram youtube blog and see how it's lived.
+playfighter is my thoughts, emotions. i feel and see and think about so much, i need somewhere to put it. to make videos about my life and what i see. the real audience can look through my instagram youtube blog and see how it's lived.
 
 combat is the studio. the manifestation. but someone sees it and they see a world of beauty, not ali's story.
 
