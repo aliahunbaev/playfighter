@@ -32,6 +32,8 @@ to have a brand, a beautiful website, a clear purpose of what it is that we do a
 
 something like a creative uniform (soldat créatif hoodie), playfighter crewneck, studio tee, gym wife beater, soldat sketchbook, "true beauty" sketchbook or journal. a replicable 1000 days journaling challenge software code, blueprint to plan a creative project, palette to collect inspiration and moodboards (like pinterest but better, but cosmos is that) but honestly, idk where software fits into combat. it might just be manifested as a dope website.
 
+the rest of this blog will be a compacted version of my conversation with Claude (AI)
+
 ---
 
 ## the seth godin question
