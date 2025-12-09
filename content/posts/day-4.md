@@ -17,16 +17,20 @@ jaden said 5
 
 i think i'd actually say 5 too
 
-the girl asked us what could make it better
-in unison, jaden and i said "ME."
+the girl asked us what could make it better, and
+in unison, jaden and i responded "ME."
 
 at dinner, i asked jaden for what he thinks my blindspot or weakness is that i would need to work on, as advice for since i’m about to turn 19 on saturday.
 
 he said no weakness, which i anticipated since he’s my boy, but if he HAD to say something, it ended up being the same thing abdul told me two years ago.
 
-i asked jaden, and it was basically - “go harder”
+i asked jaden, and he referred to the gym where i had one more rep, but i stopped. that last 2% in the gym. he said he thought about that.
 
-i asked abdul when i was 17, he said “execution”
+i was like damnnnnnnn
+
+what i heard was “go harder”
+
+i asked abdul the same question when i was 17, he said “execution”
 
 lowkey i got tripped up in the small shit here bro. i have a sensitive mind. there’s a lot of emotional and psychological process which i usually spend time reflecting on, solving, trying to work through.
 
