@@ -1,5 +1,5 @@
 ---
-date: "December 7, 2025"
+date: "December 8, 2025"
 title: "combat créatif direction"
 ---
 i'm a writer.
