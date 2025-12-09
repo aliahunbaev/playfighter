@@ -10,7 +10,17 @@ i’m about to wrap up my first semester at nyu and i gotta say i really felt li
 
 there’s literally no room for that.
 
-i asked jaden for what he thinks my blindspot or weakness is that i would need to work on, as advice for since i’m about to turn 19 on saturday.
+someone in the gym asked us what we'd rate our semester out of 10.
+
+i said 6.5
+jaden said 5
+
+i think i'd actually say 5 too
+
+the girl asked us what could make it better
+in unison, jaden and i said "ME."
+
+at dinner, i asked jaden for what he thinks my blindspot or weakness is that i would need to work on, as advice for since i’m about to turn 19 on saturday.
 
 he said no weakness, which i anticipated since he’s my boy, but if he HAD to say something, it ended up being the same thing abdul told me two years ago.
 
