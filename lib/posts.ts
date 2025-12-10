@@ -98,10 +98,10 @@ export function getAllPosts(): Post[] {
         return {
           day,
           date: data.date || '',
-          title: data.title,
+          title: data.title || undefined,
           content: '',
           rawContent: content,
-        }
+        } as Post
       })
       .filter((post): post is Post => post !== null)
       .sort((a, b) => b.day - a.day) // Sort by day, newest first
