@@ -1,117 +1,154 @@
 ---
 date: "December 9, 2025"
-title: "go harder"
+title: "impact"
 ---
-i’m joining tech@nyu (tech club) marketing team.
-also startup team in the entrepreneur’s exchange club,
-and i’ll do the product management case competition next semester.
 
-i’m about to wrap up my first semester at nyu and i gotta say i really felt like this shit was a test semester, tutorial mode.
+i’m glad i made this because it makes it hard to move through life on autopilot
 
-there’s literally no room for that.
+at least once a day, i need to sit and think about where i’m at and what i’m doing
 
-someone in the gym asked us what we'd rate our semester out of 10.
+and in a public space, even if it’s just to the 3 friends who know about this site and care about it
 
-i said 6.5
-jaden said 5
+last night i slept at 12 after having another late night “what should i do with my life” with claude, 
 
-i think i'd actually say 5 too
+i woke up at 5am, fell asleep smh, woke up at 9am
 
-the girl asked us what could make it better, and
-in unison, jaden and i responded "ME."
+then i started reading shoe dog again. abdul’s copy. and i realized that is the energy and mode i need to enter in my life.
 
-at dinner, i asked jaden for what he thinks my blindspot or weakness is that i would need to work on, as advice for since i’m about to turn 19 on saturday.
+i thought about abdul - i’m so grateful god introduced us. and i’m really excited to see both of our stories unravel. i still feel that kanye virgil / kanye pharrell duality playing out
 
-he said no weakness, which i anticipated since he’s my boy, but if he HAD to say something, it ended up being the same thing abdul told me two years ago.
+after doing that, i just sat down with my sketchbook and thinking about combat créatif, and when sketching i just missed the design language of my brand from highschool, beau flaneur.
 
-i asked jaden, and he referred to the gym where i had one more rep, but i stopped. that last 2% in the gym. he said he thought about that.
+i actually created so much beautiful work for that, which no one has ever seen. 
 
-i was like damnnnnnnn
+i actually debated / felt torn between combat (créatif) and beau flâneur for what to work on going forward.
 
-what i heard was “go harder”
+but combat has a mission, a message, a philosophy, an actual impact in the world which i deeply resonate with - to feed the creativity of other humans.
 
-i asked abdul the same question when i was 17, he said “execution”
+i feel like i do that in all my closest relationships, naturally. like i WANT to. i meet someone, they say they want to try this or i see them think deeply or have good taste, and i’ve lost track of how many times i’ve told someone “you should start writing” “you should start making videos” “you should go for it” “what do you really want to do?” “check out this thing that inspired me, you’d like it”
 
-lowkey i got tripped up in the small shit here bro. i have a sensitive mind. there’s a lot of emotional and psychological process which i usually spend time reflecting on, solving, trying to work through.
+that’s what i fuckin do bro. and i love it. i love that about being me.
 
-maybe it’s necessary. maybe it’s frontloading a lot of reflection and adjustment that i’d need to account for later in my life.
+i feel like the idea of combat créatif is an extension of that.
 
-but a lot of the time, it feels like a waste of fucking time.
+so despite how beautiful beau flaneur is, combat créatif needs to be the necessary maturation of that.
 
-and so i have a choice of where to put my attention.
+getting carried away with combat designs (which is dangerous but feels like a good sign. if i have something like that, i think that’s a good sign, no matter how it affects my grades or my attention. to have something like that is fucking rare) i skipped my class (again) and headed to the city, got coffee, and sat down to continue sketching. i was supposed to finish my final paper today (due in 3 days). but i just kept sketching.
 
-feel emotions, sit in them, expand them, pick them apart, try to make a story about them that feels cool, etc.
+i bought combatcreatif.com as a domain for 3 years, i set up the site to redirect there (and i’ll be re-making the site soon).
 
-and it’s fun sometimes. or it feels kinda good.
+i went to carmela to get brunch and work, but i ate the food and couldn’t focus.
 
-or i can say fuck it - execute.
-i can use my mind to solve problems. to make things. to make fucking moves. to make an impact in this world.
+i went to the nyu library, sat down to work on my paper and really hated the vibe. idk. i didn’t like it there.
 
-a creative and overactive and highly observant mind gets wasted when it’s directed to self-indulgent ends. self-mytholigizing, constant chatter and talking, it’s all a soak of energy.
+i left and went to qahwah house, got a cup of tea, and sat down to write my paper. 
 
-direct that into building. 
+this was 4pm. then jaden asked me to lift at 5pm, and i found abdul’s new substack post, and i was like fuckkkk thisssssss.
 
-building a mind. building a body. building a project. building an efficient routine. becoming a beautiful machine, that runs on the best fuels and exhales the best output. building BENEFICIAL relationships. 
+i don’t want to jump through this academic hoop today.
 
-also, my journals so far have been quite abstract.
-i’ll speak in concrete terms as well.
-what actually happened.
-what did i actually do.
-what the fuck did i accomplish today?
+i just decided to have my tea and enjoy the hour, and i really enjoyed abdul’s substack. it actually made me so happy.
 
+i realized this pattern in my life - the people i was close to, inevitably, become much more creative. like i was saying, i have had so many experiences where the conversations i have with someone seem to be like seeds where they later come and tell me “i started this” or “i decided to make this” and that shit makes me soooo happpyyyyy. it makes me happy to see jaden make more and say he feels better too.
 
-woke up 5:30am
-looked at my vision boards
-wrote a blog in the morning talking about the direction for a brand
-studied for my cs quiz
-shower breakfast dip
-take the cs quiz, aced it
-go home, shower, get ready, head back to manhattan
-sit in joe’s coffee, collecting quotes and drafting the outline for my final paper for the humanities class
-jaden pulled up on me at the cafe and we talked
-we hit a push workout, intertwined with talking, slam poetry, and therapy
-then we had a beautiful dinner at taboonette
-i asked him for some advice and words of wisdom, and i had that feeling of having a big bro. very kind warm soul
-i asked him if i should join tech@nyu. i was like lemme try talking to bro instead of artificial intelligence.
-he said he values people, seeing one’s true self revealed through interacting with other people, he said my skills and presence could be received and applied in an actual setting with technology and marketing at nyu, which is a good place to be.
+that’s the difference i want to make in this world. and shit, not to self-aggrandize, but i SEE myself MAKING it in my daily interactions.
 
-he said he’d do it if he were me
-and that i’ll show up there and be there exactly the way i need to be there
+i want to do it at a massive scale.
 
-it’s nice to get the input of your close friends instead of talking to yourself and ai all the time. i’ve just decided in this moment that i’d love to have a group of friends that i feel as close and aligned with as i do with jaden and abdul. 
+i want to do it as my life’s work.
 
-i’ma find my folks.
+and that’s why, philosophically, existentially, there is a clear answer to deciding between beau flaneur and combat creatif. there is a clear bias between doing homework + chasing resume lines vs. sketching designs and logos and ideas and writing this blog and making youtube videos and dreaming. there is a clear vision of a life and an impact and a portfolio that i want to create in my remaining 80 years alive.
 
-then walked me to train station, i stopped in bedford qahwah house to have some adeni chai and text the technyu people that i’d talk with them,
+so i said fuck the paper, i’m going to read this, and i was so happy.
 
-i wrote this blog, and i’m heading home to sleep early now.
+i went to lift with jaden, had dinner, i talked with patty, who told me:
 
-i don’t know why i feel so dissatisfied with my day.
+he’s been avoiding hanging around me because whenever i’m there, we all talk about our deep truths, we talk about our dreams, we talk about taking control of life and making positive change and finding wealth and health
 
-i just described it, and it sounds good.
+and when he feels scattered lost and misaligned, it’s uncomfortable and damn near embarassing to be around me.
 
-i guess i’m satisfied and so incredibly grateful for my day and what i’ve been given
+the truth is - and these journals should be proof of this - i don’t have all my shit together too. but i have self knowledge. i have direction. and when i struggle with things, i don’t run away. i confront them. i made this so that i could confront myself or check in with my self every FUCKING day for 1,000 days. to ensure i don’t let myself slip and stay down.
 
-but i’m dissatisfied with what i did.
+and that’s probably the major adjustment/lesson i think i learned today.
 
-i could really be doing more.
+it’s that i truly AM the following things:
 
-i could really be doing more.
+- creative
+- disciplined
+- intelligent
+- insightful
+- curious
+- determined
+- eccentric
+- unique
+- impactful. i truly have the power to make a positive difference in other people’s lives, and so do you.
 
-i can do more.
+and if i can do that just being me and going through my day, shit, i might as well build a fucking company that does it. and a movie. and a book. and a community. and a life.
 
-i can do so much more.
+and if i affect people, then people definetly affect me.
 
-i can do so much more.
+so the flipside of that lesson today (that i have an impact) is that other people impact me.
 
-i will do so much more.
+so i talked to rohan in the gym today, and he just fucking studies and does gym all fucking day, zero partying, zero going out, it’s all things that either benefit him as a student, benefit his career, or benefit his body. 
 
-when i was 17 i said i wanted 17.5-18.5 to be the hardest working year of my life.
+and i talked to andrew sun today in the student dining hall, who said he watched my youtube video and read my substack (his girl was there and said they read it together which is sweet and funny as fuck), and he said he knew maggie too and he talked about how fucking cracked she is with the work and pushing herself,
 
-i think it lowkey was. wasn’t even that impressive. but it was decent.
+and i remembered that i need to be around people like that.
 
-18.5-19, it’s been aight bro.
+that it’s nice to inspire, to be a helping hand for others to find their way and find alignment with their true selves,
 
-19-20 needs to be the HARDEST WORKING FUCKING YEAR OF MY LIFE.
+but that my OWN journey isn’t over. it JUST fucking started. so i need to prioritize my vision and my mission, that means put my objectives for each day FIRST AND FOREMOST, BEFORE ANYTHING ELSE, and i haven’t been doing that recently. 
 
-can’t go into the 20s a fuckin bum.
+if you can see from this blog, i didn’t accomplish much today, but there were a lot of internal narratives and interesting ideas and moments, but that’s a fucking given. 
+
+the important thing is that i didn’t accomplish much today.
+and i only have 996 days left. 
+
+so i need to be around people who make ME feel inspired, challenged, who make ME push beyond my boundaries, who make ME feel like i should be doing MORE, not less, where we all naturally bring out the BEST IN EACH OTHER.
+
+i’m going to the MoMA with maggie on the 14th,
+i’ll meet with Mihir and Rohan before break,
+i’ll join tech@nyu and the startup team at the entrepreneur’s exchange club,
+i’ll continue working on combat créatif and writing these blogs and making youtube videos and sharing my ideas on instagram (even though it’s emotionally frightening and draining, i need to push thru the fear of being seen if that’s the cost of making a creative impact)
+
+and i’ll lock the fuck in for finals because school is the container in which i’m allowed all this time to explore and grow and make connections,
+
+and after 17 years of school and all the shit that allowed me to life the age of 18-22 in NYC as an NYU student,
+
+i didn’t come here to get all excited and fuck it all up and fumble the bag.
+
+so even though today was beautiful, i learned an interesting lesson, i enjoyed my day,
+
+i didn’t go to class, i didn’t write my paper, i didn’t study for my finals.
+
+and i can’t let that continue.
+
+i won’t let that continue.
+
+tomorrow, i’ll write and finish my paper.
+i’ll do a call with the startup week people
+i’ll work out
+i’ll write my blog
+and i’ll work on combat
+
+and as the semester closes out,
+ i’ll continue to study for finals,
+which i will succeed and demolish as i have always done
+
+and i will end out this semester,
+
+clearer on my purpose, my priorities,
+
+i will have finished my first 4 months in nyc,
+having worked through a lot of emotional complexities i had to figure out,
+having surpassed the temptations of lust and destructive behavior and conformity and times of loneliness which i first experienced coming here,
+
+cuz i be figuring shit out bro on god
+
+i’ve figured so much shit out and i’ma just continue doing that
+
+excited to do the work, excited to push myself harder, excited to step back into my higher self after taking a bit of a hiatus
+
+and yeah that’s where i’m at in my last few days of being 18.
+
+love y’all. peace be upon you.

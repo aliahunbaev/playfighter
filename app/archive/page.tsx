@@ -30,17 +30,17 @@ export default function ArchivePage() {
             <div className="space-y-2">
               {posts.map((post) => (
                 <Link
-                  key={post.day}
-                  href={`/day/${post.day}`}
+                  key={`${post.day}-${post.entry || 'default'}`}
+                  href={post.entry ? `/day/${post.day}/${post.entry}` : `/day/${post.day}`}
                   className="block group py-4 hover:opacity-70 transition-opacity"
                 >
                   <div className="flex items-baseline gap-6">
                     <span className="font-mono text-lg font-bold tabular-nums text-black/60 dark:text-[#e5e5e5]/60 group-hover:text-black dark:group-hover:text-[#e5e5e5] transition-colors flex-shrink-0" style={{ minWidth: '80px' }}>
-                      {post.day.toString().padStart(4, '0')}
+                      {post.day.toString().padStart(4, '0')}{post.entry ? `-${post.entry}` : ''}
                     </span>
                     <div className="flex-1 min-w-0">
                       <h3 className="font-sans text-lg font-light" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
-                        {post.title || 'Entry ' + post.day}
+                        {post.title || `Entry ${post.day}${post.entry ? ` (${post.entry})` : ''}`}
                       </h3>
                       <div className="font-mono text-xs text-black/30 dark:text-[#e5e5e5]/30 uppercase tracking-wider mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
                         {formatDate(post.date)}
