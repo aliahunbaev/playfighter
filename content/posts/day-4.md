@@ -91,7 +91,7 @@ so the flipside of that lesson today (that i have an impact) is that other peopl
 
 so i talked to rohan in the gym today, and he just fucking studies and does gym all fucking day, zero partying, zero going out, it’s all things that either benefit him as a student, benefit his career, or benefit his body. 
 
-and i talked to andrew sun today in the student dining hall, who said he watched my youtube video and read my substack (his girl was there and said they read it together which is sweet and funny as fuck), and he said he knew maggie too and he talked about how fucking cracked she is with the work and pushing herself,
+and i talked to andrew sun today in the student dining hall, who said he watched my youtube video and read my substack (his girl was there and said they read it together which is sweet and funny), and he said he knew maggie too and he talked about how fucking cracked she is with the work and pushing herself,
 
 and i remembered that i need to be around people like that.
 
@@ -107,7 +107,7 @@ and i only have 996 days left.
 so i need to be around people who make ME feel inspired, challenged, who make ME push beyond my boundaries, who make ME feel like i should be doing MORE, not less, where we all naturally bring out the BEST IN EACH OTHER.
 
 i’m going to the MoMA with maggie on the 14th,
-i’ll meet with Mihir and Rohan before break,
+i’ll meet with mihir and rohan before break,
 i’ll join tech@nyu and the startup team at the entrepreneur’s exchange club,
 i’ll continue working on combat créatif and writing these blogs and making youtube videos and sharing my ideas on instagram (even though it’s emotionally frightening and draining, i need to push thru the fear of being seen if that’s the cost of making a creative impact)
 
