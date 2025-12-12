@@ -2,7 +2,9 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
-import html from 'remark-html'
+import remarkRehype from 'remark-rehype'
+import rehypeStringify from 'rehype-stringify'
+import rehypeExternalLinks from 'rehype-external-links'
 
 const postsDirectory = path.join(process.cwd(), 'content/posts')
 
@@ -56,7 +58,11 @@ export async function getPostByDay(day: number): Promise<Post | null> {
     const { data, content } = matter(fileContents)
 
     // Process markdown to HTML
-    const processedContent = await remark().use(html).process(content)
+    const processedContent = await remark()
+      .use(remarkRehype)
+      .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] })
+      .use(rehypeStringify)
+      .process(content)
     const contentHtml = processedContent.toString()
 
     return {
