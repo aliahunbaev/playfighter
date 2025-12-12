@@ -53,7 +53,7 @@ tomorrow, pure work. essay, cs, lift, and crack down on the verci shit when i ge
 
 i feel like, despite the “setbacks” or the feeling that i didn’t live up to my expectations for this semester (or year), i can’t help but believe that things are headed in the right direction.
 
-i listened to the song “on track” by tame impala like 50 times today. it was beautiful. teared up a little with the bright sun hitting my face while i got my preworkout coffee from la colombe. 
+i listened to the song “on track” by tame impala like 50 times today. it was beautiful. teared up a little with the bright sun hitting my face while i got my preworkout coffee from la colombe. that song is exactly what i'm feeling and thinking.
 
 my relationship to physical training is back, i’m slowly inkling toward the refined communities i love, i have a clearer idea of my path toward wealth (or solving the “money problem”) than i did before (product designer @ figma is ideal) i know what i’m looking for. and if god says i get to spend time with the verci people, and i have lighter courseload next semester, later in the day, more time to work on my own designs, meeting people, putting my ideas and work out in the world (which is how i got the technyu role and the verci internship lead, just from the shit i posted and put on the internet on my own accord), if i get to stay here in the summer and creatteeeee, if i just continue opening up my options, doing my best work, attracting the right people and opportunities through embodying my vision, i feel like i’m actually on my way to the life i dream of.
 
