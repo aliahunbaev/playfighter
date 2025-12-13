@@ -28,7 +28,7 @@ that's the type of timing i'm tryna be on tomorrow. be intentional. be reverenti
 i have my flow, i believe.
 
 i’ll wake up, have my coffee, look at my dreams, pray, and i’ll take a shower. it will be a slow and thoughtful morning. i will not open social media or any fucking noise. it will be coffee, thoughts, god, my books, my journal, and my dreams. 
-
+`
 then i'll shower, put on my birthday suit, whatever i want to feel like that day.
 i'll head to la colombe, get my americano to stay please, put some honey on that jawn, and sit down, and write.
 
