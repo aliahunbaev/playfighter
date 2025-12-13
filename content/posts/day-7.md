@@ -12,7 +12,7 @@ i want to wake up and look in the mirror and see the man i said i would become b
 from the looks of things, i’m not getting that.
 
 but i’ll take the next best thing.
-which is to wake up, and get clear on what i want for my 20th birthday, and to set the energy into the universe, to embody the rhythm and self which will grant me that gift, and to honor and release all the frequencies and beliefs which have been holding me back.
+which is to wake up, and get clear on what i want for my 20th birthday, and to send that energy into the universe, blast that shit into the universe in full effect, to embody the rhythm and self which will grant me that gift of looking in the mirror and seeing the work of art i sought to become, and to honor and release all the frequencies and beliefs which have been holding me back.
 
 i spent some time this evening thinking about how i want to spend tomorrow.
 i’m not going to study for my finals. shit ain’t important.
