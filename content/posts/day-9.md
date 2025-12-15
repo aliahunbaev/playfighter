@@ -1,5 +1,5 @@
 ---
-date: "December 15, 2025"
+date: "December 14, 2025"
 title: "fighter"
 ---
 
