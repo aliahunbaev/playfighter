@@ -83,3 +83,7 @@ but i'm getting the hang of it.
 onwards. winter break. winter arc. i look forward to it. fading everyone and finding that silence, getting back in that mode.
 
 FADE ALL THE BULLSHIT.
+
+p.s. here's the verci assignment i did:
+
+[VERCI ASSIGNMENT](https://uttermost-earth-50c.notion.site/VERCI-MISSION-2cc6d0d9aa2b80f59378edb0405919e9)
