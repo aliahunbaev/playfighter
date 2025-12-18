@@ -1,9 +1,12 @@
 ---
 date: "December 17, 2025"
-title: "getting my shit together"
+title: "first semester done"
 ---
 
-i took a little break,
+i took a little break from writing,
+mostly cuz i was sick of hearing myself talk.
+
+without sufficient action, the soul sickens.
 
 studied for my finals and finished today,
 i was up till 2am last night finishing my verci internship take-home assignment, i tried to make it as good as i could
