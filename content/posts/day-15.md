@@ -34,9 +34,9 @@ cuz i want homies to do it with.
 
 but i've realized you can NOT DRAG ANYONE UP WITH YOU.
 
-all of y'all gon drown.
+if you try to, all of y'all gon drown.
 
-and if u don't, you're surely going to go so fucking slow.
+and if u don't drown, you're surely going to move so fucking slow.
 
 it's painful in the periods when i'm alone, but it has been when i moved fastest. when i was the most on top of my shit. when i had the MOST RESPECT FOR MYSELF.
 
