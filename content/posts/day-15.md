@@ -161,3 +161,22 @@ that's what winter arc is about now.
 
 never "dragging" anyone to do shit anymore.
 
+
+*p.s.
+i see the nuances to this take.
+ion wanna be on some negative scarce shit.
+
+i think this selectivity is necessary.
+
+but i'm still figuring out the balance
+
+i think you need both
+
+an abundant generous positioning,
+but also a ruthlessness in selection to ensure SUCCESS.
+
+cuz u can die tryna save everyone and yourself
+
+or u can GET TO A GREAT PLACE and uplift others with the overflow.
+
+
