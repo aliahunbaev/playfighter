@@ -1,5 +1,5 @@
 ---
-date: "December 20, 2025"
+date: "December 21, 2025"
 title: "better alone"
 ---
 
