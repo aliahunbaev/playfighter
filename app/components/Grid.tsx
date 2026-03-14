@@ -64,11 +64,9 @@ export default function Grid({ postsByDay, currentDay, totalDays }: GridProps) {
             const hasPost = !!post
             const isPast = currentDay ? day <= currentDay : false
 
-            // Past days are filled, future days are empty
-            // Only days with posts are clickable and hoverable
             if (isPast) {
               if (hasPost) {
-                // Past day with entry - clickable and hoverable
+                // Written day — solid filled, clickable
                 return (
                   <Link
                     key={day}
@@ -80,17 +78,17 @@ export default function Grid({ postsByDay, currentDay, totalDays }: GridProps) {
                   />
                 )
               } else {
-                // Past day without entry - filled but not clickable
+                // Missed day — hollow outline, not clickable
                 return (
                   <div
                     key={day}
-                    className="w-[10px] h-[10px] bg-black dark:bg-[#e5e5e5] transition-colors duration-300 relative flex-shrink-0"
+                    className="w-[10px] h-[10px] border border-black/20 dark:border-[#e5e5e5]/20 transition-colors duration-300 relative flex-shrink-0"
                     title={`Day ${day}`}
                   />
                 )
               }
             } else {
-              // Future day - empty
+              // Future day — faded background
               return (
                 <div
                   key={day}
