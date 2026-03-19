@@ -71,7 +71,6 @@ export default function WritePage() {
     if (timerMinutes === 0) return
     setTimerSeconds(timerMinutes * 60)
     setTimerActive(true)
-    setBarVisible(false)
   }, [timerMinutes])
 
   // Countdown
@@ -91,16 +90,14 @@ export default function WritePage() {
     return () => clearInterval(interval)
   }, [timerActive, timerSeconds])
 
-  // Mouse movement brings bar back during focus mode
+  // Mouse movement brings bar back; hide again after 2s idle
   useEffect(() => {
-    if (!timerActive) return
-
     const handleMouseMove = () => {
       setBarVisible(true)
       if (cursorTimeoutRef.current) clearTimeout(cursorTimeoutRef.current)
       cursorTimeoutRef.current = setTimeout(() => {
-        if (timerActive) setBarVisible(false)
-      }, 2000) // hide again after 2s of no movement
+        setBarVisible(false)
+      }, 2000)
     }
 
     window.addEventListener('mousemove', handleMouseMove)
@@ -108,13 +105,19 @@ export default function WritePage() {
       window.removeEventListener('mousemove', handleMouseMove)
       if (cursorTimeoutRef.current) clearTimeout(cursorTimeoutRef.current)
     }
-  }, [timerActive])
+  }, [])
 
   const formatTimer = (secs: number) => {
     const m = Math.floor(secs / 60)
     const s = secs % 60
     return `${m}:${s.toString().padStart(2, '0')}`
   }
+
+  // Hide bar when typing
+  const handleTyping = useCallback(() => {
+    setBarVisible(false)
+    if (cursorTimeoutRef.current) clearTimeout(cursorTimeoutRef.current)
+  }, [])
 
   const handleAuth = (e: React.FormEvent) => {
     e.preventDefault()
@@ -207,7 +210,7 @@ export default function WritePage() {
       <input
         type="text"
         value={title}
-        onChange={(e) => setTitle(e.target.value)}
+        onChange={(e) => { setTitle(e.target.value); handleTyping() }}
         placeholder="title (optional)"
         className="w-full bg-transparent font-sans text-base leading-[1.8] font-light focus:outline-none mb-4 placeholder:text-black/20 dark:placeholder:text-[#e5e5e5]/20"
       />
@@ -216,7 +219,7 @@ export default function WritePage() {
       <textarea
         ref={textareaRef}
         value={content}
-        onChange={(e) => setContent(e.target.value)}
+        onChange={(e) => { setContent(e.target.value); handleTyping() }}
         autoFocus
         placeholder="write."
         className="w-full bg-transparent font-sans text-base leading-[1.8] font-light focus:outline-none resize-none overflow-hidden placeholder:text-black/20 dark:placeholder:text-[#e5e5e5]/20"
@@ -225,7 +228,7 @@ export default function WritePage() {
 
       {/* Fixed bottom bar — fades during focus mode */}
       <div
-        className="fixed bottom-0 left-0 right-0 bg-cream dark:bg-[#0a0a0a] border-t border-black/5 dark:border-[#e5e5e5]/5 z-40 transition-opacity duration-500"
+        className="fixed bottom-0 left-0 right-0 bg-cream dark:bg-[#0a0a0a] z-40 transition-opacity duration-300"
         style={{ opacity: barVisible ? 1 : 0, pointerEvents: barVisible ? 'auto' : 'none' }}
       >
         <div className="max-w-reading mx-auto px-6 py-4 flex items-center justify-between">
