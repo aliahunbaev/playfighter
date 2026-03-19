@@ -40,22 +40,25 @@ export default function WritePage() {
     }
   }, [content])
 
-  // Scroll on timer element to change duration
+  // Scroll on timer element to change duration (debounced for trackpad)
+  const scrollCooldownRef = useRef(false)
   useEffect(() => {
     const el = timerRef.current
     if (!el || timerActive) return
 
     const handleWheel = (e: WheelEvent) => {
       e.preventDefault()
+      if (scrollCooldownRef.current) return
+      scrollCooldownRef.current = true
+      setTimeout(() => { scrollCooldownRef.current = false }, 200)
+
       setTimerMinutes(prev => {
         const currentIdx = TIMER_STEPS.indexOf(prev)
         if (e.deltaY > 0) {
-          // Scroll down = increase
           if (currentIdx < TIMER_STEPS.length - 1) return TIMER_STEPS[currentIdx + 1]
           if (currentIdx === -1) return TIMER_STEPS[0]
           return prev
         } else {
-          // Scroll up = decrease
           if (currentIdx > 0) return TIMER_STEPS[currentIdx - 1]
           return prev
         }
