@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 export default function WritePage() {
   const [content, setContent] = useState('')
@@ -10,6 +10,7 @@ export default function WritePage() {
   const [status, setStatus] = useState<'idle' | 'posting' | 'success' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState('')
   const [postedDay, setPostedDay] = useState<number | null>(null)
+  const textareaRef = useRef<HTMLTextAreaElement>(null)
 
   useEffect(() => {
     const saved = sessionStorage.getItem('pf-auth')
@@ -18,6 +19,15 @@ export default function WritePage() {
       setAuthenticated(true)
     }
   }, [])
+
+  // Auto-resize textarea
+  useEffect(() => {
+    const ta = textareaRef.current
+    if (ta) {
+      ta.style.height = 'auto'
+      ta.style.height = ta.scrollHeight + 'px'
+    }
+  }, [content])
 
   const handleAuth = (e: React.FormEvent) => {
     e.preventDefault()
@@ -64,7 +74,7 @@ export default function WritePage() {
   // Password gate
   if (!authenticated) {
     return (
-      <div className="flex items-center justify-center min-h-[60vh]">
+      <div className="flex items-center justify-center min-h-[80vh]">
         <form onSubmit={handleAuth} className="w-full max-w-xs">
           <input
             type="password"
@@ -82,7 +92,7 @@ export default function WritePage() {
   // Success state
   if (status === 'success' && postedDay) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[60vh] gap-6">
+      <div className="flex flex-col items-center justify-center min-h-[80vh] gap-6">
         <div className="font-mono text-sm text-black/40 dark:text-[#e5e5e5]/40 uppercase tracking-wider">
           day {postedDay} posted
         </div>
@@ -105,7 +115,7 @@ export default function WritePage() {
   }
 
   return (
-    <div className="min-h-[60vh] flex flex-col">
+    <div className="pb-20">
       {/* Optional title */}
       <input
         type="text"
@@ -115,24 +125,22 @@ export default function WritePage() {
         className="w-full bg-transparent font-sans text-2xl font-light focus:outline-none mb-8 placeholder:text-black/20 dark:placeholder:text-[#e5e5e5]/20"
       />
 
-      {/* Main writing area */}
+      {/* Main writing area — auto-expands, no scroll */}
       <textarea
+        ref={textareaRef}
         value={content}
         onChange={(e) => setContent(e.target.value)}
         autoFocus
         placeholder="write."
-        className="w-full bg-transparent font-sans text-base leading-[1.8] font-light focus:outline-none resize-none flex-1 min-h-[40vh] placeholder:text-black/20 dark:placeholder:text-[#e5e5e5]/20"
+        className="w-full bg-transparent font-sans text-base leading-[1.8] font-light focus:outline-none resize-none overflow-hidden placeholder:text-black/20 dark:placeholder:text-[#e5e5e5]/20"
+        rows={1}
       />
 
-      {/* Bottom bar */}
-      <div className="flex items-center justify-between pt-8 mt-auto">
-        <div className="font-mono text-xs text-black/30 dark:text-[#e5e5e5]/30 tabular-nums">
-          {content.trim().split(/\s+/).filter(Boolean).length} words
-        </div>
-
-        <div className="flex items-center gap-4">
+      {/* Fixed bottom bar */}
+      <div className="fixed bottom-0 left-0 right-0 bg-cream dark:bg-[#0a0a0a] border-t border-black/5 dark:border-[#e5e5e5]/5 z-40">
+        <div className="max-w-reading mx-auto px-6 py-4 flex items-center justify-end">
           {status === 'error' && (
-            <span className="font-mono text-xs text-red-500">{errorMsg}</span>
+            <span className="font-mono text-xs text-red-500 mr-4">{errorMsg}</span>
           )}
           <button
             onClick={handleSubmit}
