@@ -30,7 +30,7 @@ export default async function DayPage({ params }: { params: { number: string } }
       <div className="max-w-reading mx-auto">
         {/* Post Header */}
       <div className="mb-12 text-center">
-        <h1 className="font-sans text-3xl md:text-4xl font-light mb-4" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+        <h1 className="font-sans text-3xl md:text-4xl font-light mb-4">
           {post.title || 'Entry ' + post.day}
         </h1>
         <div className="flex gap-3 text-xs font-mono text-black/40 dark:text-[#e5e5e5]/40 uppercase tracking-wider justify-center">

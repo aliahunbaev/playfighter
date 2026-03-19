@@ -66,23 +66,23 @@ export default function Grid({ postsByDay, currentDay, totalDays }: GridProps) {
 
             if (isPast) {
               if (hasPost) {
-                // Written day — solid filled, clickable
+                // Written day — blue, clickable
                 return (
                   <Link
                     key={day}
                     href={`/day/${day}`}
-                    className="w-[10px] h-[10px] bg-black dark:bg-[#e5e5e5] hover:opacity-80 cursor-pointer transition-colors duration-300 relative flex-shrink-0"
+                    className="w-[10px] h-[10px] bg-blue-500 dark:bg-blue-400 hover:opacity-80 cursor-pointer transition-colors duration-300 relative flex-shrink-0"
                     onMouseMove={(e) => handleMouseMove(e, day)}
                     onMouseLeave={handleMouseLeave}
                     title={`Day ${day}: ${post.title || 'Entry ' + day}`}
                   />
                 )
               } else {
-                // Missed day — muted red, not clickable
+                // Missed day — neutral black/white
                 return (
                   <div
                     key={day}
-                    className="w-[10px] h-[10px] bg-red-400/40 dark:bg-red-500/30 transition-colors duration-300 relative flex-shrink-0"
+                    className="w-[10px] h-[10px] bg-black/20 dark:bg-white/20 transition-colors duration-300 relative flex-shrink-0"
                     title={`Day ${day}`}
                   />
                 )
@@ -115,7 +115,7 @@ export default function Grid({ postsByDay, currentDay, totalDays }: GridProps) {
             {hoveredDay.toString().padStart(4, '0')}
           </div>
           {postsByDay.get(hoveredDay)?.title && (
-            <div className="font-sans text-xs font-light mt-1 max-w-[200px] truncate" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+            <div className="font-sans text-xs font-light mt-1 max-w-[200px] truncate">
               {postsByDay.get(hoveredDay)?.title}
             </div>
           )}

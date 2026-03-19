@@ -103,7 +103,7 @@ export default function ArchiveGrid({ postsByDay, totalDays }: ArchiveGridProps)
             {hoveredDay.toString().padStart(4, '0')}
           </div>
           {postsByDay.get(hoveredDay)?.title && (
-            <div className="font-sans text-xs font-light mt-1 max-w-[200px] truncate" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+            <div className="font-sans text-xs font-light mt-1 max-w-[200px] truncate">
               {postsByDay.get(hoveredDay)?.title}
             </div>
           )}

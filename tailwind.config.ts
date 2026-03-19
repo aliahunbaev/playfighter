@@ -11,11 +11,9 @@ const config: Config = {
     extend: {
       colors: {
         cream: '#F5F3ED',
-        bronze: '#8B7355',
-        forest: '#2C4A34',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
         mono: ['var(--font-mono)', 'monospace'],
       },
       maxWidth: {

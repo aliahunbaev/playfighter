@@ -29,7 +29,7 @@ export default function LinksPage() {
             className="block group py-4 hover:opacity-60 transition-opacity"
           >
             <div className="flex items-baseline justify-between gap-4">
-              <span className="font-sans text-lg font-light" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+              <span className="font-sans text-lg font-light">
                 {link.name}
               </span>
               <span className="font-mono text-xs text-black/40 dark:text-[#e5e5e5]/40 uppercase tracking-wider">

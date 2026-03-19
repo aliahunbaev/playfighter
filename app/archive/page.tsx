@@ -39,7 +39,7 @@ export default function ArchivePage() {
                       {post.day.toString().padStart(4, '0')}
                     </span>
                     <div className="flex-1 min-w-0">
-                      <h3 className="font-sans text-lg font-light" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+                      <h3 className="font-sans text-lg font-light">
                         {post.title || 'Entry ' + post.day}
                       </h3>
                       <div className="font-mono text-xs text-black/30 dark:text-[#e5e5e5]/30 uppercase tracking-wider mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
