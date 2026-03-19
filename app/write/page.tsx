@@ -14,10 +14,11 @@ export default function WritePage() {
   const [errorMsg, setErrorMsg] = useState('')
   const [postedDay, setPostedDay] = useState<number | null>(null)
   const textareaRef = useRef<HTMLTextAreaElement>(null)
+  const timerRef = useRef<HTMLDivElement>(null)
 
   // Focus timer state
-  const [timerMinutes, setTimerMinutes] = useState(0) // 0 = off, otherwise minutes selected
-  const [timerSeconds, setTimerSeconds] = useState(0) // countdown in seconds
+  const [timerMinutes, setTimerMinutes] = useState(5) // default 5 min
+  const [timerSeconds, setTimerSeconds] = useState(0)
   const [timerActive, setTimerActive] = useState(false)
   const [barVisible, setBarVisible] = useState(true)
   const cursorTimeoutRef = useRef<NodeJS.Timeout | null>(null)
@@ -39,16 +40,13 @@ export default function WritePage() {
     }
   }, [content])
 
-  // Scroll on textarea to set timer duration (only when timer is not active)
+  // Scroll on timer element to change duration
   useEffect(() => {
-    const ta = textareaRef.current
-    if (!ta || timerActive) return
+    const el = timerRef.current
+    if (!el || timerActive) return
 
     const handleWheel = (e: WheelEvent) => {
-      // Only intercept if holding shift (to not break normal scrolling)
-      if (!e.shiftKey) return
       e.preventDefault()
-
       setTimerMinutes(prev => {
         const currentIdx = TIMER_STEPS.indexOf(prev)
         if (e.deltaY > 0) {
@@ -59,14 +57,13 @@ export default function WritePage() {
         } else {
           // Scroll up = decrease
           if (currentIdx > 0) return TIMER_STEPS[currentIdx - 1]
-          if (currentIdx === 0) return 0
           return prev
         }
       })
     }
 
-    ta.addEventListener('wheel', handleWheel, { passive: false })
-    return () => ta.removeEventListener('wheel', handleWheel)
+    el.addEventListener('wheel', handleWheel, { passive: false })
+    return () => el.removeEventListener('wheel', handleWheel)
   }, [timerActive])
 
   // Start timer
@@ -235,23 +232,19 @@ export default function WritePage() {
           <div className="flex items-center gap-4">
             <DarkModeToggle />
 
-            {/* Focus timer */}
-            {!timerActive && timerMinutes > 0 && (
-              <button
+            {/* Focus timer — hover and scroll to set, click to start/stop */}
+            {!timerActive ? (
+              <div
+                ref={timerRef}
                 onClick={startTimer}
-                className="font-mono text-xs text-black/40 dark:text-[#e5e5e5]/40 hover:text-black dark:hover:text-[#e5e5e5] transition-colors uppercase tracking-wider"
+                className="font-mono text-xs text-black/30 dark:text-[#e5e5e5]/30 hover:text-black dark:hover:text-[#e5e5e5] transition-colors tabular-nums cursor-pointer select-none"
+                title="Scroll to adjust, click to start"
               >
-                {timerMinutes}:00 — start
-              </button>
-            )}
-            {!timerActive && timerMinutes === 0 && (
-              <span className="font-mono text-xs text-black/20 dark:text-[#e5e5e5]/20 uppercase tracking-wider">
-                shift + scroll to set timer
-              </span>
-            )}
-            {timerActive && (
+                {timerMinutes}:00
+              </div>
+            ) : (
               <button
-                onClick={() => { setTimerActive(false); setBarVisible(true); setTimerMinutes(0); setTimerSeconds(0) }}
+                onClick={() => { setTimerActive(false); setBarVisible(true); setTimerMinutes(5); setTimerSeconds(0) }}
                 className="font-mono text-xs text-black/40 dark:text-[#e5e5e5]/40 hover:text-black dark:hover:text-[#e5e5e5] transition-colors tabular-nums"
               >
                 {formatTimer(timerSeconds)}
