@@ -78,11 +78,11 @@ export default function Grid({ postsByDay, currentDay, totalDays }: GridProps) {
                   />
                 )
               } else {
-                // Missed day — neutral black/white
+                // Missed day — full black/white
                 return (
                   <div
                     key={day}
-                    className="w-[10px] h-[10px] bg-black/20 dark:bg-white/20 transition-colors duration-300 relative flex-shrink-0"
+                    className="w-[10px] h-[10px] bg-black dark:bg-[#e5e5e5] transition-colors duration-300 relative flex-shrink-0"
                     title={`Day ${day}`}
                   />
                 )
