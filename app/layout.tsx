@@ -24,7 +24,7 @@ export default function RootLayout({
           <header className="mb-20 relative z-50">
             <nav className="relative flex justify-center items-center">
               <Menu />
-              <a href="/" className="font-sans text-2xl md:text-3xl font-bold relative z-50">
+              <a href="/" className="text-2xl md:text-3xl font-bold relative z-50" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
                 PLAYFIGHTER
               </a>
               <div className="absolute right-0 z-50">
