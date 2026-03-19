@@ -1,5 +1,3 @@
-import DarkModeToggle from '../components/DarkModeToggle'
-
 export default function WriteLayout({
   children,
 }: {
@@ -14,9 +12,6 @@ export default function WriteLayout({
         body > div > main { margin-top: 0; }
         body > div { padding-top: 1.5rem; padding-bottom: 0; }
       `}</style>
-      <div className="fixed top-6 right-6 z-50">
-        <DarkModeToggle />
-      </div>
       {children}
     </>
   )
