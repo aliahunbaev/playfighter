@@ -50,6 +50,5 @@ and thinking about how much more fulfilled and happy and focused and self-loving
 
 i trust that the 80 percent of my life will be started incredibly early mornings.
 
-i love this too much to give it up, like coffee, like jazz, like training, like writing,  like making art. i love the morning. and by extension, i love the day, and by extension, i love the life. 
-
+i love this too much to give it up, like coffee, like jazz, like training, like writing,  like making art. i love the morning. and by extension, i love the day, and by extension, i love the life.
 

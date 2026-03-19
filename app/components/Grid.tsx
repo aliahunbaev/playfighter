@@ -78,11 +78,11 @@ export default function Grid({ postsByDay, currentDay, totalDays }: GridProps) {
                   />
                 )
               } else {
-                // Missed day — hollow outline, not clickable
+                // Missed day — muted red, not clickable
                 return (
                   <div
                     key={day}
-                    className="w-[10px] h-[10px] border border-black/20 dark:border-[#e5e5e5]/20 transition-colors duration-300 relative flex-shrink-0"
+                    className="w-[10px] h-[10px] bg-red-400/40 dark:bg-red-500/30 transition-colors duration-300 relative flex-shrink-0"
                     title={`Day ${day}`}
                   />
                 )
