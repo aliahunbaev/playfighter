@@ -139,7 +139,7 @@ export default function WritePage() {
       const res = await fetch('/api/post', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ content, title: title.trim() || undefined, password }),
+        body: JSON.stringify({ content, title: title.trim() || undefined, password, clientDate: new Date().toLocaleDateString('en-CA') }),
       })
 
       const data = await res.json()

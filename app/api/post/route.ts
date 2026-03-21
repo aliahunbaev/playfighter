@@ -2,11 +2,9 @@ import { NextResponse } from 'next/server'
 
 const START_DATE_STRING = '2025-12-06'
 
-function calculateDayNumber(): number {
-  const now = new Date()
-  const estDateString = now.toLocaleDateString('en-CA', { timeZone: 'America/New_York' })
+function calculateDayNumber(dateString: string): number {
   const [startYear, startMonth, startDay] = START_DATE_STRING.split('-').map(Number)
-  const [currentYear, currentMonth, currentDay] = estDateString.split('-').map(Number)
+  const [currentYear, currentMonth, currentDay] = dateString.split('-').map(Number)
   const start = new Date(startYear, startMonth - 1, startDay)
   const current = new Date(currentYear, currentMonth - 1, currentDay)
   const diffTime = current.getTime() - start.getTime()
@@ -14,10 +12,10 @@ function calculateDayNumber(): number {
   return Math.max(1, diffDays)
 }
 
-function formatDate(): string {
-  const now = new Date()
-  return now.toLocaleDateString('en-US', {
-    timeZone: 'America/New_York',
+function formatDate(dateString: string): string {
+  const [year, month, day] = dateString.split('-').map(Number)
+  const date = new Date(year, month - 1, day)
+  return date.toLocaleDateString('en-US', {
     month: 'long',
     day: 'numeric',
     year: 'numeric',
@@ -25,7 +23,7 @@ function formatDate(): string {
 }
 
 export async function POST(request: Request) {
-  const { content, title, password } = await request.json()
+  const { content, title, password, clientDate } = await request.json()
 
   if (!password || password !== process.env.WRITE_PASSWORD) {
     return NextResponse.json({ error: 'Wrong password' }, { status: 401 })
@@ -42,8 +40,10 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'GitHub token not configured' }, { status: 500 })
   }
 
-  const day = calculateDayNumber()
-  const date = formatDate()
+  // Use client's local date if provided, fall back to server EST
+  const dateString = clientDate || new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' })
+  const day = calculateDayNumber(dateString)
+  const date = formatDate(dateString)
   const path = `content/posts/day-${day}.md`
 
   // Check if file already exists
