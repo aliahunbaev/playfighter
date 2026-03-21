@@ -54,11 +54,13 @@ export default function WritePage() {
 
       setTimerMinutes(prev => {
         const currentIdx = TIMER_STEPS.indexOf(prev)
-        if (e.deltaY > 0) {
+        if (e.deltaY < 0) {
+          // Scroll up = increase
           if (currentIdx < TIMER_STEPS.length - 1) return TIMER_STEPS[currentIdx + 1]
           if (currentIdx === -1) return TIMER_STEPS[0]
           return prev
         } else {
+          // Scroll down = decrease
           if (currentIdx > 0) return TIMER_STEPS[currentIdx - 1]
           return prev
         }
@@ -74,6 +76,7 @@ export default function WritePage() {
     if (timerMinutes === 0) return
     setTimerSeconds(timerMinutes * 60)
     setTimerActive(true)
+    setBarVisible(false)
   }, [timerMinutes])
 
   // Countdown
@@ -93,8 +96,10 @@ export default function WritePage() {
     return () => clearInterval(interval)
   }, [timerActive, timerSeconds])
 
-  // Mouse movement brings bar back; hide again after 2s idle
+  // Mouse movement brings bar back during focus mode; hide again after 2s idle
   useEffect(() => {
+    if (!timerActive) return
+
     const handleMouseMove = () => {
       setBarVisible(true)
       if (cursorTimeoutRef.current) clearTimeout(cursorTimeoutRef.current)
@@ -108,7 +113,7 @@ export default function WritePage() {
       window.removeEventListener('mousemove', handleMouseMove)
       if (cursorTimeoutRef.current) clearTimeout(cursorTimeoutRef.current)
     }
-  }, [])
+  }, [timerActive])
 
   const formatTimer = (secs: number) => {
     const m = Math.floor(secs / 60)
@@ -116,11 +121,13 @@ export default function WritePage() {
     return `${m}:${s.toString().padStart(2, '0')}`
   }
 
-  // Hide bar when typing
+  // Hide bar when typing (only during focus mode)
   const handleTyping = useCallback(() => {
-    setBarVisible(false)
-    if (cursorTimeoutRef.current) clearTimeout(cursorTimeoutRef.current)
-  }, [])
+    if (timerActive) {
+      setBarVisible(false)
+      if (cursorTimeoutRef.current) clearTimeout(cursorTimeoutRef.current)
+    }
+  }, [timerActive])
 
   const handleAuth = (e: React.FormEvent) => {
     e.preventDefault()
