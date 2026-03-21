@@ -208,7 +208,7 @@ export default function WritePage() {
   }
 
   return (
-    <div className="pb-20">
+    <div className="pb-[50vh]">
       {/* Title — same size as body */}
       <input
         type="text"
@@ -229,33 +229,24 @@ export default function WritePage() {
         rows={1}
       />
 
-      {/* Fixed bottom bar — fades during focus mode */}
+      {/* Fixed bottom bar — transparent, edge-to-edge */}
       <div
-        className="fixed bottom-0 left-0 right-0 bg-cream dark:bg-[#0a0a0a] z-40 transition-opacity duration-300"
+        className="fixed bottom-0 left-0 right-0 z-40 transition-opacity duration-300 px-6 py-4"
         style={{ opacity: barVisible ? 1 : 0, pointerEvents: barVisible ? 'auto' : 'none' }}
       >
-        <div className="max-w-reading mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <DarkModeToggle />
 
             {/* Focus timer — hover and scroll to set, click to start/stop */}
-            {!timerActive ? (
-              <div
-                ref={timerRef}
-                onClick={startTimer}
-                className="font-mono text-xs text-black/30 dark:text-[#e5e5e5]/30 hover:text-black dark:hover:text-[#e5e5e5] transition-colors tabular-nums cursor-pointer select-none"
-                title="Scroll to adjust, click to start"
-              >
-                {timerMinutes}:00
-              </div>
-            ) : (
-              <button
-                onClick={() => { setTimerActive(false); setBarVisible(true); setTimerMinutes(5); setTimerSeconds(0) }}
-                className="font-mono text-xs text-black/40 dark:text-[#e5e5e5]/40 hover:text-black dark:hover:text-[#e5e5e5] transition-colors tabular-nums"
-              >
-                {formatTimer(timerSeconds)}
-              </button>
-            )}
+            <div
+              ref={timerRef}
+              onClick={timerActive ? () => { setTimerActive(false); setBarVisible(true); setTimerMinutes(5); setTimerSeconds(0) } : startTimer}
+              className="font-mono text-xs text-black/30 dark:text-[#e5e5e5]/30 hover:text-black dark:hover:text-[#e5e5e5] transition-colors tabular-nums cursor-pointer select-none py-2 px-1"
+              title={timerActive ? 'Click to stop' : 'Scroll to adjust, click to start'}
+            >
+              {timerActive ? formatTimer(timerSeconds) : `${timerMinutes}:00`}
+            </div>
           </div>
 
           <div className="flex items-center gap-4">
