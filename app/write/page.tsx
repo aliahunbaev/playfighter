@@ -14,7 +14,8 @@ export default function WritePage() {
   const [errorMsg, setErrorMsg] = useState('')
   const [postedDay, setPostedDay] = useState<number | null>(null)
   const textareaRef = useRef<HTMLTextAreaElement>(null)
-  const timerRef = useRef<HTMLDivElement>(null)
+  const [timerEl, setTimerEl] = useState<HTMLDivElement | null>(null)
+  const timerRef = useCallback((el: HTMLDivElement | null) => { setTimerEl(el) }, [])
 
   // Focus timer state
   const [timerMinutes, setTimerMinutes] = useState(15) // default 15 min
@@ -44,9 +45,9 @@ export default function WritePage() {
   const scrollAccumRef = useRef(0)
   const SCROLL_THRESHOLD = 80
   useEffect(() => {
-    const el = timerRef.current
-    if (!el || timerActive) return
+    if (!timerEl || timerActive) return
     scrollAccumRef.current = 0
+    const el = timerEl
 
     const handleWheel = (e: WheelEvent) => {
       e.preventDefault()
@@ -72,7 +73,7 @@ export default function WritePage() {
 
     el.addEventListener('wheel', handleWheel, { passive: false })
     return () => el.removeEventListener('wheel', handleWheel)
-  }, [timerActive])
+  }, [timerEl, timerActive])
 
   // Start timer
   const startTimer = useCallback(() => {
