@@ -64,6 +64,8 @@ export default function Grid({ postsByDay, currentDay, totalDays }: GridProps) {
             const hasPost = !!post
             const isPast = currentDay ? day <= currentDay : false
 
+            const isToday = day === currentDay
+
             if (isPast) {
               if (hasPost) {
                 // Written day — blue, clickable
@@ -75,6 +77,16 @@ export default function Grid({ postsByDay, currentDay, totalDays }: GridProps) {
                     onMouseMove={(e) => handleMouseMove(e, day)}
                     onMouseLeave={handleMouseLeave}
                     title={`Day ${day}: ${post.title || 'Entry ' + day}`}
+                  />
+                )
+              } else if (isToday) {
+                // Today, no entry yet — link to /write
+                return (
+                  <Link
+                    key={day}
+                    href="/write"
+                    className="w-[10px] h-[10px] bg-black dark:bg-[#e5e5e5] hover:bg-blue-500 dark:hover:bg-blue-400 cursor-pointer transition-colors duration-300 relative flex-shrink-0"
+                    title={`Day ${day} — write today's entry`}
                   />
                 )
               } else {
