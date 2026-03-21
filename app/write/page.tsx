@@ -17,7 +17,7 @@ export default function WritePage() {
   const timerRef = useRef<HTMLDivElement>(null)
 
   // Focus timer state
-  const [timerMinutes, setTimerMinutes] = useState(5) // default 5 min
+  const [timerMinutes, setTimerMinutes] = useState(15) // default 15 min
   const [timerSeconds, setTimerSeconds] = useState(0)
   const [timerActive, setTimerActive] = useState(false)
   const [barVisible, setBarVisible] = useState(true)
@@ -40,31 +40,34 @@ export default function WritePage() {
     }
   }, [content])
 
-  // Scroll on timer element to change duration (debounced for trackpad)
-  const scrollCooldownRef = useRef(false)
+  // Scroll on timer element to change duration (accumulate delta for natural feel)
+  const scrollAccumRef = useRef(0)
+  const SCROLL_THRESHOLD = 80
   useEffect(() => {
     const el = timerRef.current
     if (!el || timerActive) return
+    scrollAccumRef.current = 0
 
     const handleWheel = (e: WheelEvent) => {
       e.preventDefault()
-      if (scrollCooldownRef.current) return
-      scrollCooldownRef.current = true
-      setTimeout(() => { scrollCooldownRef.current = false }, 200)
+      scrollAccumRef.current += e.deltaY
 
-      setTimerMinutes(prev => {
-        const currentIdx = TIMER_STEPS.indexOf(prev)
-        if (e.deltaY < 0) {
-          // Scroll up = increase
-          if (currentIdx < TIMER_STEPS.length - 1) return TIMER_STEPS[currentIdx + 1]
-          if (currentIdx === -1) return TIMER_STEPS[0]
-          return prev
-        } else {
-          // Scroll down = decrease
-          if (currentIdx > 0) return TIMER_STEPS[currentIdx - 1]
-          return prev
-        }
-      })
+      if (Math.abs(scrollAccumRef.current) >= SCROLL_THRESHOLD) {
+        const direction = scrollAccumRef.current > 0 ? 'down' : 'up'
+        scrollAccumRef.current = 0
+
+        setTimerMinutes(prev => {
+          const currentIdx = TIMER_STEPS.indexOf(prev)
+          if (direction === 'up') {
+            if (currentIdx < TIMER_STEPS.length - 1) return TIMER_STEPS[currentIdx + 1]
+            if (currentIdx === -1) return TIMER_STEPS[0]
+            return prev
+          } else {
+            if (currentIdx > 0) return TIMER_STEPS[currentIdx - 1]
+            return prev
+          }
+        })
+      }
     }
 
     el.addEventListener('wheel', handleWheel, { passive: false })
@@ -248,7 +251,7 @@ export default function WritePage() {
             {/* Focus timer — hover and scroll to set, click to start/stop */}
             <div
               ref={timerRef}
-              onClick={timerActive ? () => { setTimerActive(false); setBarVisible(true); setTimerMinutes(5); setTimerSeconds(0) } : startTimer}
+              onClick={timerActive ? () => { setTimerActive(false); setBarVisible(true); setTimerMinutes(15); setTimerSeconds(0) } : startTimer}
               className="font-mono text-xs text-black/30 dark:text-[#e5e5e5]/30 hover:text-black dark:hover:text-[#e5e5e5] transition-colors tabular-nums cursor-pointer select-none py-2 px-1"
               title={timerActive ? 'Click to stop' : 'Scroll to adjust, click to start'}
             >
