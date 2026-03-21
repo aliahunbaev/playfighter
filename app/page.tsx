@@ -17,7 +17,7 @@ export default async function HomePage() {
       <div className="mb-24">
         <div className="flex flex-col items-center mb-12 w-full">
           <div className="font-mono leading-none tabular-nums w-full text-center tracking-tight" style={{ fontSize: 'clamp(3.5rem, calc((min(100vw, 680px) - 3rem) / 8), 10rem)', letterSpacing: '-0.05em' }}>
-            <span className="text-black/20 dark:text-[#e5e5e5]/20">day </span>{currentDay}
+            {currentDay}
           </div>
           <LiveDateTime />
         </div>
